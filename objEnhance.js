@@ -16,6 +16,14 @@ const PI = 3.14;
 ///Hoisting allows for variables and function declarations to be made before
 ///they are defined later in the code. 
 
+//ARROW FUNCTIONS
+//Arrow functions shorthand
+const double = arr => arr.map(val => val *2);
+
+//Refactored functions
+const squareAndFindEvens = numbers => numbers.map(num => num ** 2).filter(square => square % 2 === 0)
+
+
 //OBJECT ENHANCEMENT
 //Same keys and values
 
