@@ -24,6 +24,53 @@ const double = arr => arr.map(val => val *2);
 const squareAndFindEvens = numbers => numbers.map(num => num ** 2).filter(square => square % 2 === 0)
 
 
+//REST AND SPREAD
+//Refactor with rest and arrow function:
+const filterOdds = (...nums) => nums.filter(v => v % 2 === 0);
+
+//findMin
+function findMin(...nums){
+  return Math.min(...nums);
+}
+
+//mergeObjects
+const mergeObjects = (obj1, obj2) => ({...obj1, ...obj2});
+
+//doubleAndReturnArgs
+const doubleAndReturnArgs = (arr, ...args) => [...arr, ...args.map(v => v * 2)];
+
+//Slice and Dice
+const removeRandom = items => {
+  let idx = Math.floor(Math.random() * items.length);
+  return [...items.slice(0, idx), ...items.slice(idx + 1)];
+}
+
+const extend = (array1, array2) => {
+  return [...array1, ...array2];
+}
+
+const addKeyVal = (obj, key, val) => {
+  let newObj = {...obj}
+  newObj[key] = val;
+  return newObj;
+}
+
+const removeKey = (obj, key) => {
+  let newObj = {...obj}
+  delete newObj[key];
+  return newObj;
+}
+
+const combine = (obj1, obj2) => {
+  return {...obj1, ...obj2};
+}
+
+const update = (obj, key, val) => {
+  let newObj = {...obj}
+  newObj[key] = val;
+  return newObj;
+}
+
 //OBJECT ENHANCEMENT
 //Same keys and values
 
