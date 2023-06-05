@@ -1,3 +1,20 @@
+//LET AND CONST
+//ES2015 Global Constants
+const PI = 3.14;
+
+//Quiz
+//What is the difference between var and let?
+///Var may be redeclared and reassigned. Let can be reassigned but not redeclared.
+
+//What is the difference between var and const?
+///Const can not be redeclared or reassigned.
+
+//What is the difference between let and const?
+//Let may be reassigned, const can not. 
+
+//What is hoisting?
+///Hoisting allows for variables and function declarations to be made before
+///they are defined later in the code. 
 
 //OBJECT ENHANCEMENT
 //Same keys and values
